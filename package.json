@@ -1,0 +1,12 @@
+{
+  "name": "includerjs",
+  "version": "0.0.1",
+  "author": "Lasse Vestergaard",
+  "license": "MIT",
+  "scripts": {
+    "build": "node scripts/build.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.15.11"
+  }
+}
