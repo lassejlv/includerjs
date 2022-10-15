@@ -1,9 +1,10 @@
-const INC_LIST = document.querySelectorAll("#inc");
+const INC_LIST = document.querySelectorAll("include");
 
 const END_PREFIX = ".html";
 
 INC_LIST.forEach((I) => {
   let ATTR = I.getAttribute("file");
+  let ATTR_ID = I.getAttribute("id");
 
   function getFile() {
     if (!ATTR.includes(END_PREFIX)) {
@@ -17,7 +18,7 @@ INC_LIST.forEach((I) => {
 
     xhr.onload = function () {
       if (this.status == 200) {
-        console.log(this.responseText);
+        return this.responseText;
       }
     };
 
