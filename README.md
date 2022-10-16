@@ -1,6 +1,6 @@
 # Includer.js
 
-A javascript liabry for including other **HTML** files into one single **HTML** file.
+A javascript library for including other **HTML** files into one single **HTML** file.
 
 ### Get started
 
