@@ -7,6 +7,25 @@ const FeatureList = [
     title: "Easy to Use",
     description: <>Includer.js is very is to use, just one HTML tag.</>,
   },
+
+  {
+    title: "No Download",
+    description: (
+      <>
+        No download is required to use Includer.js, just grab the CDN and you
+        are good to go!
+      </>
+    ),
+  },
+
+  {
+    title: "Build with ❤",
+    description: (
+      <>
+        Includer.js is build to make developers HTML code much better to write.
+      </>
+    ),
+  },
 ];
 
 function Feature({ Svg, title, description }) {
