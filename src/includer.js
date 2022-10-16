@@ -9,13 +9,15 @@ INC_LIST.forEach((I) => {
   function getFile() {
     // Validate ATTR
     if (!ATTR) {
-      throw new Error(
-        "You must use the 'path' attribute to use the 'include' tag"
+      return console.error(
+        "The <include> tag is required to have an 'path' attribute."
       );
-    }
-
-    if (!ATTR.includes(END_PREFIX)) {
-      throw new Error(`The path to ${ATTR}, must end with ${END_PREFIX}`);
+    } else if (!ATTR_ID) {
+      return console.error(
+        "The <include> tag is must have the 'id' attribute."
+      );
+    } else if (!ATTR.includes(END_PREFIX)) {
+      return console.error(`The path to ${ATTR}, must end with ${END_PREFIX}`);
     }
 
     // Get the HTML file
