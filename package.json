@@ -5,10 +5,13 @@
   "license": "MIT",
   "scripts": {
     "dev": "servemon dev",
-    "build": "node scripts/build.js"
+    "servemon": "servemon",
+    "build": "node src/build.js"
   },
   "devDependencies": {
-    "esbuild": "^0.15.11",
     "servemon": "^2.1.9"
+  },
+  "dependencies": {
+    "esbuild": "^0.15.11"
   }
 }

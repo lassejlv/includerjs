@@ -4,14 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Includer JS</title>
   </head>
   <body>
-    <!-- Navbar -->
-    <include file="components/navbar.htl" id="id1" />
-
-    <!-- Footer -->
-    <include file="components/footer.html" id="id2" />
+    <include path="components/navbar.html" id="this"></include>
+    <include path="components/footer.html" id="this2"></include>
 
     <script src="includer.js"></script>
   </body>
