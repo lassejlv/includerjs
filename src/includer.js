@@ -23,7 +23,7 @@ INC_LIST.forEach((I) => {
     // Get the HTML file
     let xhr = new XMLHttpRequest();
 
-    xhr.open("GET", `${window.location.href}${ATTR}`);
+    xhr.open("GET", `${ATTR}`);
 
     xhr.onload = function () {
       if (this.status == 200) {

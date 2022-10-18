@@ -28,7 +28,7 @@ https://unpkg.com/includerjs@0.0.3/dist/includer-0.0.3.bundle.js
 <include path="components/navbar.html" id="navbar"></include>
 ```
 
-So in this example you see the `file` attribute. This is where your path to your html file is. Its required to give your `<include>` tag an id bcz then it will not appear on your site.
+So in this example you see the `path` attribute. This is where your path to your html file is. Its required to give your `<include>` tag an id bcz then it will not appear on your site.
 
 Root Example
 
