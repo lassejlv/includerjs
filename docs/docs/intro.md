@@ -13,22 +13,22 @@ You can use the CDN or download the [Javascript](https://cdn.hypll.org/services/
 #### CDN
 
 ```bash
-https://unpkg.com/includerjs@0.0.6/dist/includer-0.0.6.bundle.js
+https://unpkg.com/includerjs@0.0.7/dist/includer-0.0.7.bundle.js
 ```
 
 #### Script
 
 ```html
-<script src="https://unpkg.com/includerjs@0.0.6/dist/includer-0.0.6.bundle.js"></script>
+<script src="https://unpkg.com/includerjs@0.0.7/dist/includer-0.0.7.bundle.js"></script>
 ```
 
 ##### Quick Example:
 
 ```html
-<include path="components/navbar.html" id="navbar"></include>
+<include path="components/navbar.html"></include>
 ```
 
-So in this example you see the `path` attribute. This is where your path to your html file is. Its required to give your `<include>` tag an id bcz then it will not appear on your site.
+So in this example you see the `path` attribute. This is where your path to your html file is.
 
 Root Example
 
