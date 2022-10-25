@@ -4,7 +4,7 @@ const END_PREFIX = ".html";
 
 INC_LIST.forEach((I) => {
   // Set the attribute
-  I.setAttribute("id", Math.floor(Math.random() * 100000000000));
+  I.setAttribute("id", "includer-" + Math.floor(Math.random() * 100000000000));
 
   let ATTR = I.getAttribute("path");
   const ATTR_ID = I.getAttribute("id");
