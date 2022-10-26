@@ -1,48 +1,27 @@
-# Includer.js
+# Include HTML Files In HTML – Includer.js
 
-A Javascript library for including other **HTML** files into one single **HTML** file.
+Includer.js is a tiny JavaScript library that enables you to inject HTML content into the current page from external HTML files via XMLHttpRequest.
 
-### Get started
+The main goal of this library is to include HTML pages with no PHP required, just as embedding JavaScript and CSS3 into the document.
 
-<br>
+## How to use it:
 
-<b>📦 Installation</b><br><br>
-You can use the CDN or download the [Javascript](https://cdn.hypll.org/services/programing/includerjs/includer.min.js) file.
-
-CDN
-
-```
-https://unpkg.com/includerjs@1.0.4/dist/includer-1.0.4.bundle.js
-```
-
-<b>🚀 Usage</b><br>
-
-Using the `<include>` tag.
-
-Example:
+1. Load the Includer.js library in the document.
 
 ```html
-<include path="components/navbar.html"></include>
+<script src="https://unpkg.com/includerjs@1.0.5/dist/includer-1.0.4.bundle.js"></script>
 ```
 
-So in this example you see the `path` attribute. This is where your path to your html file is.
-
-Root Example
-
-```shell
-components/
-        └── navbar.html
-index.html
-```
-
-## Logger
-
-If you wan't to log messages, you can add the `includer-log="true"` attribute to the body tag
-
-Example:
+2. Add the <include> component to the page and specify the path to the external HTML files.
 
 ```html
-<body includer-log="true">
-  ....
-</body>
+<include path="header.html"></include>
 ```
+
+```html
+<include path="footer.html"></include>
+```
+
+# Preview:
+
+![Image](https://i0.wp.com/www.cssscript.com/wp-content/uploads/2022/10/include-html-file.webp?fit=746%2C568&ssl=1)
