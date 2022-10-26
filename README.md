@@ -12,7 +12,7 @@ You can use the CDN or download the [Javascript](https://cdn.hypll.org/services/
 CDN
 
 ```
-https://unpkg.com/includerjs@1.0.3/dist/includer-1.0.3.bundle.js
+https://unpkg.com/includerjs@1.0.4/dist/includer-1.0.4.bundle.js
 ```
 
 <b>🚀 Usage</b><br>

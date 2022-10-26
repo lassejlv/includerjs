@@ -1,12 +1,16 @@
 {
   "name": "includerjs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "author": "Lasse Vestergaard",
   "license": "MIT",
   "scripts": {
     "dev": "servemon dev",
     "servemon": "servemon",
     "build": "node src/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lassv/includerjs.git"
   },
   "devDependencies": {
     "servemon": "^2.1.9"
