@@ -12,7 +12,7 @@ You can use the CDN or download the [Javascript](https://cdn.hypll.org/services/
 CDN
 
 ```
-https://unpkg.com/includerjs@1.0.2/dist/includer-1.0.2.bundle.js
+https://unpkg.com/includerjs@1.0.3/dist/includer-1.0.3.bundle.js
 ```
 
 <b>🚀 Usage</b><br>
@@ -33,4 +33,16 @@ Root Example
 components/
         └── navbar.html
 index.html
+```
+
+## Logger
+
+If you wan't to log messages, you can add the `includer-log="true"` attribute to the body tag
+
+Example:
+
+```html
+<body includer-log="true">
+  ....
+</body>
 ```
