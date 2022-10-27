@@ -1,4 +1,5 @@
 const { version, author, license, name } = require("../package.json");
+const repo = require("../package.json").repository.url;
 let time = Date.now();
 
 require("esbuild")
@@ -8,7 +9,8 @@ require("esbuild")
       js: `/* 
     ${name} v${version} 
     Copyright (c) 2022 ${author} 
-    Licensed under the ${license} license 
+    Licensed under the ${license} license
+    Github: ${repo}
 */`,
     },
     bundle: false,
