@@ -27,7 +27,7 @@ if (INC_LOGGER === "true") {
   );
 }
 
-// Loading THE INC_LIST
+// Loading THE DOCUMENT
 window.addEventListener("load", () => {
   console.log(`%c ${MESSAGE.LOADED}`, "background: #222; color: #b00fe6");
 });
@@ -61,8 +61,15 @@ INC_LIST.forEach((I) => {
 
     xhr.onload = function () {
       // If the request was successful, we will innerHTML the include tag
+
+      const element = document.getElementById(ATTR_ID);
+
       if (this.status == 200) {
-        document.getElementById(ATTR_ID).innerHTML = this.responseText;
+        // Set the HTML
+        element.innerHTML = this.responseText;
+        element.setAttribute("loaded", Date.now() - time + "ms");
+      } else if (this.status === 404) {
+        element.innerHTML = `<h1 style="color: red">Response came with 404 code.</h1>`;
       }
 
       // Enable Logger
