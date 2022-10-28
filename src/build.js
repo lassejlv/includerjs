@@ -13,6 +13,12 @@ require("esbuild")
     Github: ${repo}
 */`,
     },
+    watch: {
+      onRebuild(error, result) {
+        if (error) console.error("Watch build failed:", error);
+        else console.log(`Watch build succeeded in ${Date.now() - time}ms`);
+      },
+    },
     bundle: false,
     minify: true,
     outfile: `./dist/includer-${version}.bundle.js`,
