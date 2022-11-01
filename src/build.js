@@ -4,7 +4,7 @@ let time = Date.now();
 
 require("esbuild")
   .build({
-    entryPoints: ["./src/includer.js"],
+    entryPoints: ["./src/main.js"],
     banner: {
       js: `/* 
     ${name} v${version} 
@@ -14,7 +14,7 @@ require("esbuild")
 */`,
     },
     watch: {
-      onRebuild(error, result) {
+      onRebuild(error) {
         if (error) console.error("Watch build failed:", error);
         else console.log(`Watch build succeeded in ${Date.now() - time}ms`);
       },

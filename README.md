@@ -9,17 +9,29 @@ The main goal of this library is to include HTML pages with no PHP required, jus
 1. Load the Includer.js library in the document.
 
 ```html
-<script src="https://unpkg.com/includerjs@1.0.9/dist/includer-1.0.9.bundle.js"></script>
+<script src="https://unpkg.com/includerjs@2.0.0/dist/includer-2.0.0.bundle.js"></script>
 ```
 
 2. Add the <include> component to the page and specify the path to the external HTML files.
 
 ```html
-<include path="header.html"></include>
+<include src="header.html"></include>
 ```
 
 ```html
-<include path="footer.html"></include>
+<include src="footer.html"></include>
+```
+
+### Logger
+
+If you wan't to enable the logger, then just add the `includer-log="true"` in your body tag.
+
+Example:
+
+```html
+<body includer-log="true">
+  ...
+</body>
 ```
 
 # Preview:
