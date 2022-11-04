@@ -1,21 +1,22 @@
 {
-  "name": "includerjs",
-  "version": "2.0.0",
-  "author": "Lasse Vestergaard",
-  "license": "MIT",
-  "scripts": {
-    "dev": "servemon dev",
-    "servemon": "servemon",
-    "build": "node src/build.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/lassv/includerjs.git"
-  },
-  "devDependencies": {
-    "servemon": "^2.1.9"
-  },
-  "dependencies": {
-    "esbuild": "^0.15.11"
+    "name": "includerjs-monorepo",
+    "version": "0.0.1",
+    "author": "Lasse Vestergaard",
+    "license": "MIT",
+    "scripts": {
+      "dev": "servemon dev",
+      "servemon": "servemon",
+      "build": "node packages/build/index.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/lassv/includerjs.git"
+    },
+    "devDependencies": {
+      "servemon": "^2.1.9"
+    },
+    "dependencies": {
+      "esbuild": "^0.15.11"
+    }
   }
-}
+  

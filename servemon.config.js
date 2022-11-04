@@ -1,7 +1,9 @@
 module.exports = {
   projectName: "includer.js",
   port: 3000,
-  directory: "src",
+  directory: "packages/core",
   pkgManager: "servemon",
   watch: true,
+  open: true,
+  logger: true,
 };

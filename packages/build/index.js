@@ -1,10 +1,10 @@
-const { version, author, license, name } = require("../package.json");
-const repo = require("../package.json").repository.url;
+const { version, author, license, name } = require("../core/package.json");
+const repo = require("../core/package.json").repository.url;
 let time = Date.now();
 
 require("esbuild")
   .build({
-    entryPoints: ["./src/main.js"],
+    entryPoints: ["./packages/core/src/main.js"],
     banner: {
       js: `/* 
     ${name} v${version} 
