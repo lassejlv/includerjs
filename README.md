@@ -2,8 +2,6 @@
 
 Includer.js is a tiny JavaScript library that enables you to inject HTML content into the current page from external HTML files via XMLHttpRequest.
 
-The main goal of this library is to include HTML pages with no PHP required, just as embedding JavaScript into the document.
-
 ## How to use it:
 
 1. Load the Includer.js library in the document.
