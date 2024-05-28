@@ -1,0 +1,5 @@
+# Ignore all files except README.md, package.json, and dist/ folder
+*
+!README.md
+!package.json
+!dist/**
