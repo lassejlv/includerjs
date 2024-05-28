@@ -1,6 +1,5 @@
-src
-docs
-./src
-node_modules
-pnpm-lock.yaml
-servemon.config.js
+# Ignore all files except README.md, package.json, and dist/ folder
+*
+!README.md
+!package.json
+!dist/**
